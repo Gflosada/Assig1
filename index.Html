@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="stylesheet.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza Order Form</title>
+</head>
+<body>
+  <header>
+    <a href=""><img src="/Images/PizzaToronto.svg" alt="Logo"></a>
+    <h1>Welocome To Pizza Toronto </h1>
+    <p>Welcome to Pizza Toronto, where you can order your favorite pizza online!</p>
+  </header>
+  <main>
+    <form action="submit.php" method="post">
+      <fieldset>
+        <legend>Number and size of pizzas</legend>
+        <label for="number">How many pizzas do you want?</label>
+        <input type="number" id="number" name="number" min="1" max="10" required>
+        <label for="size">What size do you want?</label>
+        <select id="size" name="size" required>
+          <option value="small">Small (4 slices)</option>
+          <option value="medium">Medium (6 slices)</option>
+          <option value="large">Large (8 slices)</option>
+          <option value="extra-large">Extra large (10 slices)</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Shape and crust of pizzas</legend>
+        <p>What shape do you want?</p>
+        <input type="radio" id="round" name="shape" value="round" checked>
+        <label for="round">Round</label>
+        <input type="radio" id="square" name="shape" value="square">
+        <label for="square">Square</label>
+        <p>What crust do you want?</p>
+        <input type="radio" id="thin" name="crust" value="thin" checked>
+        <label for="thin">Thin</label>
+        <input type="radio" id="thick" name="crust" value="thick">
+        <label for="thick">Thick</label>
+        <input type="radio" id="deep" name="crust" value="deep">
+        <label for="deep">Deep dish</label>
+      </fieldset>
+      <fieldset>
+        <legend>Toppings of pizzas</legend>
+        <p>What toppings do you want?</p>
+        <input type="checkbox" id="cheese" name="toppings" value="cheese" checked>
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" id="mushroom" name="toppings" value="mushroom">
+        <label for="mushroom">Mushroom</label>
+        <input type="checkbox" id="olive" name="toppings" value="olive">
+        <label for="olive">Olive</label>
+        <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+        <label for="pineapple">Pineapple</label>
+        <input type="checkbox" id="ham" name="toppings" value="ham">
+        <label for="ham">Ham</label>
+        <input type="checkbox" id="bacon" name="toppings" value="bacon">
+        <label for="bacon">Bacon</label>
+        <input type="checkbox" id="chicken" name="toppings" value="chicken">
+        <label for="chicken">Chicken</label>
+        <input type="checkbox" id="pepper" name="toppings" value="pepper">
+        <label for="pepper">Pepper</label>
+        <input type="checkbox" id="onion" name="toppings" value="onion">
+        <label for="onion">Onion</label>
+      </fieldset>
+      <fieldset>
+        <legend>Delivery details</legend>
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <label for="phone">Your phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <label for="email">Your email address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <label for="address">Your delivery address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your delivery address" required>
+        <label for="date">Your preferred delivery date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Your preferred delivery time:</label>
+        <input type="time" id="time" name="time" required>
+      </fieldset>
+      <p>Here is a picture of a delicious pizza:</p>
+      <img src="images/pizza.jpg" alt="A pizza with cheese, pepperoni, mushroom and olive toppings" width="300" height="300">
+      <p>Are you ready to order?</p>
+      <input type="submit" value="Order now">
+      <input type="reset" value="Clear form">
+    </form>
+  </main>
+  <footer>
+    <p>Pizza Toronto © 2024. All rights reserved.</p>
+  </footer>
+</body>
+</html>
